@@ -1,0 +1,10 @@
+node_modules
+lib
+.vscode
+.idea
+dist
+build
+coverage
+
+packlib--archmap-1.0.0
+packlib-config.js

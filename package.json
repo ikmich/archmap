@@ -1,0 +1,45 @@
+{
+  "name": "archmap",
+  "version": "1.0.0",
+  "description": "Architecture with code",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:dev": "ts-node src/index.ts",
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "pkg": "npm run build && npm pack",
+    "watch": "npm run build --watch",
+    "test": "jest --runInBand --forceExit --passWithNoTests --verbose --useStderr"
+  },
+  "bin": {
+    "archmap": "dist/index.js"
+  },
+  "author": "Ikenna Agbasimalo <michfx@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.18.12"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "ts-node": "^9.1.1"
+  },
+  "keywords": [],
+  "bugs": {
+    "email": "michfx@gmail.com",
+    "url": "https://github.com/ikmich/archmap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikmich/archmap"
+  },
+  "maintainers": [
+    "Ikenna Agbasimalo <michfx@gmail.com>"
+  ],
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "tabWidth": 2
+  }
+}
